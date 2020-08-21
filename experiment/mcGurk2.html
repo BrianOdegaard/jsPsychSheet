@@ -51,6 +51,7 @@
 				sources: jsPsych.timelineVariable('video'),
 				width: 800,
 				choices: [],
+				data: jsPsych.timelineVariable('video'), /* Store the video name */
 				trial_ends_after_video: true,
 				prompt: '<p></p>'
 				
@@ -60,6 +61,7 @@
 				sources: [],
 				width: 800,
 				choices: jsPsych.timelineVariable('syllables'),
+				data: jsPsych.timelineVariable('syllables'), /* Store the answer choices on that trial */
 				prompt: '<p>Which syllable did you perceive?</p>'
 				
 			},
