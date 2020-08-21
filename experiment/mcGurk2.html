@@ -41,6 +41,15 @@
 				type: 'video-button-response',
 				sources: jsPsych.timelineVariable('video'),
 				width: 800,
+				choices: [],
+				trial_duration: 2300,
+				prompt: '<p></p>'
+				
+			},
+			{
+				type: 'video-button-response',
+				sources: [],
+				width: 800,
 				choices: jsPsych.timelineVariable('syllables'),
 				prompt: '<p>Which syllable did you perceive?</p>'
 				
