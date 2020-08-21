@@ -18,6 +18,16 @@
     <body></body>
     <script>
 
+	// generate a random subject ID with 15 characters
+	var subject_id = jsPsych.randomization.randomID(6);
+	
+	// record the condition assignment in the jsPsych data
+	// this adds a property called 'subject' and a property called 'condition' to every trial
+	jsPsych.data.addProperties({
+  		subject: subject_id,
+  		condition: condition_assignment
+	});
+	    
 	/* create timeline */
 	var timeline = [];
 
